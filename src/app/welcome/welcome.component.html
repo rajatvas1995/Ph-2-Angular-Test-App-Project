@@ -1,0 +1,17 @@
+  <div class="container bg-light py-5">
+    <h1 class="display-5 fw-bold">Welcome to Angular & Type-Script Test</h1>
+    <p class="col-md-8 fs-4">This Quiz will contain total 9 questions. Each Question holds 10 points</p>
+    <h4>Rules</h4>
+    <ol>
+      <li>Correct Question given you 10 points.</li>
+      <li>Inorrect Question given you -10 points.</li>
+      <li>You will have 10 seconds to answer each question</li>
+      <li>Refreshing the page will reset the Quiz.</li>
+    </ol>
+    <h1 style="font-family: cursive; text-align:center">All the Best!</h1>
+    <div class="name col-md-4 my-3">
+      <label for="">Enter Your Name</label>
+      <input #name type="text" class="form-control">
+    </div>
+    <button class="btn btn-success btn-lg" routerLink="/questions" (click)="startQuiz()">Start the Quiz!!</button>
+  </div>
